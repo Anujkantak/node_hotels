@@ -6,10 +6,7 @@ require("dotenv").config(); // for storing sensitive information and using it we
 const mongoURL=process.env.MONGO_DB_HOST_URL // above was local mongodb server but it was hosted mongodb server using mongodb atlas
 
 
-mongoose.connect(mongoURL,{  // establishing connection with the mongodb url and these parameter helps to match with the future updates
-  // useNewUrlParser:true,
-  useUnifiedTopology:true
-});
+mongoose.connect(mongoURL) // establishing connection with the mongodb url and these parameter helps to match with the future);
 
 
 const db=mongoose.connection // mongooose maintains a default connection object representing mongodb connection
