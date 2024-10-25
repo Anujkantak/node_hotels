@@ -1,0 +1,19 @@
+{
+  "name": "anuj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anuj kantak",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "loadash": "^1.0.0",
+    "mongoose": "^8.7.2",
+    "nodemon": "^3.1.7"
+  }
+}
