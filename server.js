@@ -67,9 +67,9 @@ const menuRoutes=require("./routes/menuRoutes")
 // using person routes
 app.use("/menu",menuRoutes);
 
+const PORT=process.env.PORT
 
-
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
   console.log("server started at port number 3000")
 }) // means run this server on 3000 port number
 

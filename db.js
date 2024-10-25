@@ -1,10 +1,13 @@
 const mongoose=require("mongoose"); // to establish connection between nodejs and mongodb
+require("dotenv").config(); // for storing sensitive information and using it we can use sensitive info here
+ //const mongoURL=process.env.MONGO_DB_LOCAL_URL // url of mongodb server through which we want to connect
 
-const mongoURL="mongodb://127.0.0.1:27017/hotels" // url of mongodb server through which we want to connect
+  // fetching mongodbhosturl from .env because it contain password 
+const mongoURL=process.env.MONGO_DB_HOST_URL // above was local mongodb server but it was hosted mongodb server using mongodb atlas
 
 
 mongoose.connect(mongoURL,{  // establishing connection with the mongodb url and these parameter helps to match with the future updates
-  useNewUrlParser:true,
+  // useNewUrlParser:true,
   useUnifiedTopology:true
 });
 
